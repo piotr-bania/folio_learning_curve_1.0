@@ -25,7 +25,8 @@
   --body-font: 'obvia';
   --header-font: 'Expansiva';
   --header-font-bold: 'Expansiva Bold';
-  --body-font-size: 1rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.85rem;
   --main-shadow:
         2.8px 2.8px 2.2px rgba(0, 0, 0, 0.07),
         6.7px 6.7px 5.3px rgba(0, 0, 0, 0.05),
@@ -64,7 +65,7 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(var(--darker)), to(var(--dark)));
   background-image: linear-gradient(to right, var(--darker), var(--dark));
   font-family: var(--body-font);
-  font-size: var(--body-font-size);
+  font-size: var(--normal-font-size);
   color: var(--light);
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -218,7 +219,7 @@ section {
 .open-menu {
   position: fixed;
   right: 5%;
-  top: 6%;
+  top: 5%;
   width: 60px;
   height: 60px;
   padding: 7px;
@@ -373,5 +374,41 @@ section {
 .three {
   right: 26.66%;
   top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .open-menu,
+  .closed-menu {
+    width: 50px;
+    height: 50px;
+  }
+  #nav-content .section-heading {
+    font-size: 2rem;
+  }
+  #nav-content a {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 1.802rem;
+  }
+  h2 {
+    font-size: 1.602rem;
+  }
+  h3 {
+    font-size: 1.424rem;
+  }
+  h4 {
+    font-size: 1.266rem;
+  }
+  h5 {
+    font-size: 1.125rem;
+  }
+  p {
+    font-size: var(--small-font-size);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
