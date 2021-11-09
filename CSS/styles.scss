@@ -110,3 +110,17 @@ h5 {
 p {
     font-family: var(--body-font);
 }
+
+// ------------------------------ Sections ------------------------------
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1468px;
+}
