@@ -65,6 +65,10 @@ body {
   font-family: var(--body-font);
   font-size: var(--body-font-size);
   color: var(--light);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 h1 {
@@ -113,6 +117,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-height: 100vh;
 }
 
 .container {
@@ -121,15 +126,58 @@ section {
   max-width: 1468px;
 }
 
+#section-a {
+  background-image: url(/Images/Backgrounds/Piotr-Bania.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
 #section-a h1 {
   color: var(--light);
+}
+
+#section-b .container {
+  background-image: url(/Images/Backgrounds/Portfolio.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#section-c .container {
+  background-image: url(/Images/Backgrounds/Lab.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#section-d .container {
+  background-image: url(/Images/Backgrounds/Skills.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#section-e .container {
+  background-image: url(/Images/Backgrounds/About.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#section-f .container {
+  background-image: url(/Images/Backgrounds/Contact.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #section-b,
 #section-d,
 #section-f {
-  background-image: -webkit-gradient(linear, right top, left top, from(var(--darker)), to(var(--dark)));
-  background-image: linear-gradient(to left, var(--darker), var(--dark));
+  background: -webkit-gradient(linear, right top, left top, from(var(--darker)), to(var(--dark)));
+  background: linear-gradient(to left, var(--darker), var(--dark));
+  padding: 100px 0;
 }
 
 #section-b h1,
@@ -142,6 +190,7 @@ section {
 #section-e {
   background-image: -webkit-gradient(linear, left top, right top, from(var(--lighter)), to(var(--light)));
   background-image: linear-gradient(to right, var(--lighter), var(--light));
+  padding: 100px 0;
 }
 
 #section-c h1,
@@ -219,5 +268,28 @@ section {
   position: fixed;
   right: 10px;
   bottom: 0;
+}
+
+.strip {
+  position: fixed;
+  width: 1px;
+  height: 100vh;
+  background: rgba(113, 97, 245, 0.2);
+  z-index: 100;
+}
+
+.one {
+  left: 26.66%;
+  top: 0;
+}
+
+.two {
+  left: 50%;
+  top: 0;
+}
+
+.three {
+  right: 26.66%;
+  top: 0;
 }
 /*# sourceMappingURL=styles.css.map */
