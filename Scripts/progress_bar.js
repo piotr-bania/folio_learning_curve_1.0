@@ -1,3 +1,5 @@
+// Progress bar
+
 let progressSection = document.querySelector('.progressSection')
 let progressBar = document.querySelector('.progressBar')
 let progressNum = document.querySelector('.progressNum')
