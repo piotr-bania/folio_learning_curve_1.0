@@ -303,6 +303,58 @@ section {
   transition: 0.3s ease-in-out;
 }
 
+strong {
+  color: var(--purple-blue);
+}
+
+b {
+  font-family: var(--header-font-bold);
+  color: var(--green);
+}
+
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--light);
+}
+
+a {
+  color: var(--light);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--green);
+}
+
+span {
+  color: var(--purple);
+}
+
+button {
+  border-radius: 20px 5px 10px 10px;
+  padding: 15px 25px;
+  margin-top: 20px;
+  border: 1px solid var(--darker);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(var(--darker)));
+  background-image: linear-gradient(to right, var(--purple), var(--darker));
+  -webkit-box-shadow: var(--main-shadow);
+          box-shadow: var(--main-shadow);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 1px solid var(--green);
+  color: var(--green);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(var(--dark)));
+  background-image: linear-gradient(to right, var(--purple), var(--dark));
+  -webkit-box-shadow: var(--hover-shadow);
+          box-shadow: var(--hover-shadow);
+}
+
 .progressSection {
   position: fixed;
   right: 5%;
@@ -408,6 +460,12 @@ section {
     font-size: 1.125rem;
   }
   p {
+    font-size: var(--small-font-size);
+  }
+  button {
+    border-radius: 17px 3px 7px 7px;
+    padding: 12px 16px;
+    margin-top: 10px;
     font-size: var(--small-font-size);
   }
 }
