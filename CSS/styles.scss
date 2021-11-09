@@ -18,6 +18,7 @@
     --turquoise: #62F5E6;
     --green: #61F570;
     --yellow: #E6F561;
+    --red: #F57061;
     --darker: #040117;
     --dark: #07032E;
     --light: #F5F4FE;
@@ -218,8 +219,91 @@ section {
     left: 5%;
     top: 5%;
     z-index: 100;
+}
+
+.open-menu {
+    position: fixed;
+    right: 5%;
+    top: 6%;
+    width: 60px;
+    height: 60px;
+    padding: 7px;
+    cursor: pointer;
+    z-index: 98;
+}
+
+.closed-menu {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    width: 60px;
+    height: 60px;
+    padding: 7px;
+    cursor: pointer;
+    z-index: 98;
+}
+
+#nav-content {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 75%;
+    height: 100%;
+    max-width: 600px;
+    z-index: 99;
+    background-color: rgba(11, 4, 69, 0.95);
+    display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    transform: translateX(105%);
+    transition: 0.5s ease transform;
+
+    a {
+        display: inline-block;
+        width: 100%;
+        color: var(--light);
+        font-size: 2.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    a:hover {
+        color: var(--green);
+    }
+}
+
+#nav-content.show {
+    transform: translateX(0);
+    box-shadow:
+    0px 0px 7.8px rgba(0, 0, 0, 0.053),
+    0px 0px 17.2px rgba(0, 0, 0, 0.078),
+    0px 0px 28.8px rgba(0, 0, 0, 0.096),
+    0px 0px 43.4px rgba(0, 0, 0, 0.111),
+    0px 0px 62.6px rgba(0, 0, 0, 0.125),
+    0px 0px 88.6px rgba(0, 0, 0, 0.139),
+    0px 0px 125.7px rgba(0, 0, 0, 0.154),
+    0px 0px 182.5px rgba(0, 0, 0, 0.172),
+    0px 0px 281.3px rgba(0, 0, 0, 0.197),
+    0px 0px 500px rgba(0, 0, 0, 0.25);
+}
+
+#nav-content .section-heading {
+    text-align: left;
+    font-size: 3rem;
+    font-family: var(--header-font-bold);
+    padding-bottom: 20px;
+}
+
+#nav-content .wrapper {
+    width: 70%;
+    position: relative;
+}
+
+#nav-content .closed-menu {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    transition: 0.3s ease-in-out;
 }
 
 // ------------------------------ Progress bar ------------------------------
@@ -234,7 +318,7 @@ section {
     justify-content: space-between;
     will-change: transform;
     transition: 0.3s ease-in-out;
-    z-index: 99;
+    z-index: 90;
 }
 
 .progressBarWrap {
@@ -273,7 +357,7 @@ section {
     width: 1px;
     height: 100vh;
     background: rgba(113, 97, 245, 0.2);
-    z-index: 100;
+    z-index: 90;
 }
 
 .one {
