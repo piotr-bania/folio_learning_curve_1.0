@@ -269,7 +269,7 @@ section {
     }
 
     a:hover {
-        color: var(--green);
+        color: var(--yellow);
     }
 }
 
@@ -292,6 +292,7 @@ section {
     text-align: left;
     font-size: 3rem;
     font-family: var(--header-font-bold);
+    color: var(--green);
     padding-bottom: 20px;
 }
 
@@ -305,6 +306,16 @@ section {
     left: 5%;
     top: 5%;
     transition: 0.3s ease-in-out;
+}
+
+// ------------------------------ Hero section ------------------------------
+
+.text {
+    color: var(--light);
+}
+
+.cursor {
+    color: var(--yellow);
 }
 
 // ------------------------------ Portfolio section ------------------------------
@@ -351,8 +362,8 @@ button {
 
 button:hover {
     cursor: pointer;
-    border: 1px solid var(--green);
-    color: var(--green);
+    border: 1px solid var(--yellow);
+    color: var(--yellow);
     background-image: linear-gradient(to right, var(--purple), var(--dark));
     box-shadow: var(--hover-shadow);
 }
@@ -449,23 +460,23 @@ button:hover {
     }
 
     h1 {
-        font-size: 1.802rem;
+        font-size: 1.383rem;
     }
 
     h2 {
-        font-size: 1.602rem;
+        font-size: 1.296rem;
     }
 
     h3 {
-        font-size: 1.424rem;
+        font-size: 1.215rem;
     }
 
     h4 {
-        font-size: 1.266rem;
+        font-size: 1.138rem;
     }
 
     h5 {
-        font-size: 1.125rem;
+        font-size: 1.067rem;
     }
 
     p {
@@ -474,7 +485,7 @@ button:hover {
 
     button {
         border-radius: 17px 3px 7px 7px;
-        padding: 12px 16px;
+        padding: 10px 15px;
         margin-top: 10px;
         font-size: var(--small-font-size);
     }
