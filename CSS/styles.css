@@ -12,7 +12,8 @@
   --purple: #7161F5;
   --purple-blue: #626CF5;
   --purple-blue-lighter: #6286F5;
-  --turquoise: #62F5E6;
+  --blue-turqupise: #629FF5;
+  --turquoise: #62B8F5;
   --green: #61F570;
   --yellow: #E6F561;
   --red: #F57061;
@@ -75,34 +76,32 @@ body {
 
 h1 {
   font-family: var(--header-font-bold);
-  color: var(--light);
   font-size: 3.052rem;
-}
-
-h2,
-h3 {
-  font-family: var(--header-font);
-  color: var(--grey-text);
+  color: var(--purple);
 }
 
 h2 {
+  font-family: var(--header-font);
   font-size: 2.441rem;
+  color: var(--purple-blue-lighter);
 }
 
 h3 {
+  font-family: var(--header-font);
   font-size: 1.953rem;
+  color: var(--purple-blue-lighter);
 }
 
 h4 {
   font-family: var(--header-font);
-  color: var(--yellow);
   font-size: 1.563rem;
+  color: var(--blue-turqupise);
 }
 
 h5 {
   font-family: var(--header-font);
-  color: var(--light);
   font-size: 1.25rem;
+  color: var(--turquoise);
 }
 
 p {
@@ -119,7 +118,6 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100vh;
 }
 
 .container {
@@ -129,6 +127,7 @@ section {
 }
 
 #section-a {
+  min-height: 100vh;
   background-image: url(/Images/Backgrounds/Piotr-Bania.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -141,28 +140,28 @@ section {
 
 #section-b .container {
   background-image: url(/Images/Backgrounds/Portfolio.svg);
-  background-position: right;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #section-c .container {
   background-image: url(/Images/Backgrounds/Lab.svg);
-  background-position: left;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #section-d .container {
   background-image: url(/Images/Backgrounds/Skills.svg);
-  background-position: right;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #section-e .container {
   background-image: url(/Images/Backgrounds/About.svg);
-  background-position: left;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -175,36 +174,29 @@ section {
 }
 
 #section-b,
+#section-c,
 #section-d,
+#section-e,
 #section-f {
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--lighter)), to(var(--light)));
-  background-image: linear-gradient(to right, var(--lighter), var(--light));
-  padding: 100px 0;
+  padding: 120px 0;
 }
 
-#section-b h1,
-#section-d h1,
-#section-f h1 {
-  color: var(--light);
+#section-b,
+#section-d,
+#section-f {
+  background: -webkit-gradient(linear, right top, left top, from(var(--darker)), to(var(--dark)));
+  background: linear-gradient(to left, var(--darker), var(--dark));
 }
 
 #section-c,
 #section-e {
-  background: -webkit-gradient(linear, right top, left top, from(var(--darker)), to(var(--dark)));
-  background: linear-gradient(to left, var(--darker), var(--dark));
-  padding: 100px 0;
-}
-
-#section-c h1,
-#section-c h5,
-#section-e h1,
-#section-e h5 {
-  color: var(--dark);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--lighter)), to(var(--light)));
+  background-image: linear-gradient(to right, var(--lighter), var(--light));
 }
 
 #section-c p,
 #section-e p {
-  color: var(--grey-text);
+  color: var(--dark);
 }
 
 .logo {
@@ -342,6 +334,12 @@ span {
   color: var(--purple);
 }
 
+.heading {
+  position: relative;
+  width: 60%;
+  left: 20%;
+}
+
 button {
   border-radius: 20px 5px 10px 10px;
   padding: 15px 25px;
@@ -477,6 +475,16 @@ button:hover {
     padding: 10px 15px;
     margin-top: 10px;
     font-size: var(--small-font-size);
+  }
+  .heading {
+    left: 10%;
+  }
+  #section-b,
+  #section-c,
+  #section-d,
+  #section-e,
+  #section-f {
+    padding: 50px 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
