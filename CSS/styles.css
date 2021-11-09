@@ -177,8 +177,8 @@ section {
 #section-b,
 #section-d,
 #section-f {
-  background: -webkit-gradient(linear, right top, left top, from(var(--darker)), to(var(--dark)));
-  background: linear-gradient(to left, var(--darker), var(--dark));
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--lighter)), to(var(--light)));
+  background-image: linear-gradient(to right, var(--lighter), var(--light));
   padding: 100px 0;
 }
 
@@ -190,8 +190,8 @@ section {
 
 #section-c,
 #section-e {
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--lighter)), to(var(--light)));
-  background-image: linear-gradient(to right, var(--lighter), var(--light));
+  background: -webkit-gradient(linear, right top, left top, from(var(--darker)), to(var(--dark)));
+  background: linear-gradient(to left, var(--darker), var(--dark));
   padding: 100px 0;
 }
 
@@ -246,7 +246,8 @@ section {
   height: 100%;
   max-width: 600px;
   z-index: 99;
-  background-color: rgba(11, 4, 69, 0.95);
+  background: -webkit-gradient(linear, left top, right top, from(var(--darker)), to(var(--dark)));
+  background: linear-gradient(to right, var(--darker), var(--dark));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,7 +288,7 @@ section {
   text-align: left;
   font-size: 3rem;
   font-family: var(--header-font-bold);
-  color: var(--green);
+  color: var(--red);
   padding-bottom: 20px;
 }
 
@@ -309,7 +310,7 @@ section {
 }
 
 .cursor {
-  color: var(--yellow);
+  color: var(--red);
 }
 
 strong {
@@ -418,7 +419,7 @@ button:hover {
   position: fixed;
   width: 1px;
   height: 100vh;
-  background: rgba(113, 97, 245, 0.2);
+  background: rgba(113, 97, 245, 0.1);
   z-index: 90;
 }
 
