@@ -340,6 +340,14 @@ span {
   left: 20%;
 }
 
+.all-projects {
+  margin-top: 50px;
+}
+
+img {
+  width: 40%;
+}
+
 button {
   border-radius: 20px 5px 10px 10px;
   padding: 15px 25px;
@@ -485,6 +493,9 @@ button:hover {
   #section-e,
   #section-f {
     padding: 50px 0;
+  }
+  img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

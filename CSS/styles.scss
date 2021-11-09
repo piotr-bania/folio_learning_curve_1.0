@@ -351,6 +351,14 @@ span {
     left: 20%;
 }
 
+.all-projects {
+    margin-top: 50px;
+}
+
+img {
+    width: 40%;
+}
+
 // ------------------------------ Buttons ------------------------------
 
 button {
@@ -503,5 +511,9 @@ button:hover {
     #section-e,
     #section-f {
         padding: 50px 0;
+    }
+
+    img {
+        width: 100%;
     }
 }
