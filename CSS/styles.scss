@@ -124,3 +124,90 @@ section {
     margin: 0 auto;
     max-width: 1468px;
 }
+
+#section-a {
+    h1 {
+        color: var(--light);
+    }
+}
+
+#section-b,
+#section-d,
+#section-f {
+    background-image: linear-gradient(to left, var(--darker), var(--dark));
+
+    h1 {
+        color: var(--light);
+    }
+}
+
+#section-c,
+#section-e {
+    background-image: linear-gradient(to right, var(--lighter), var(--light));
+
+    h1,
+    h5 {
+        color: var(--dark);
+    }
+
+    p {
+        color: var(--grey-text);
+    }
+}
+
+// ------------------------------ Progress bar ------------------------------
+
+.logo {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    left: 5%;
+    top: 5%;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+  }
+
+// ------------------------------ Progress bar ------------------------------
+
+.progressSection {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    width: 1px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    will-change: transform;
+    transition: 0.3s ease-in-out;
+    z-index: 99;
+}
+
+.progressBarWrap {
+    position: relative;
+    width: 1px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--purple);
+    box-shadow: var(--main-shadow);
+}
+
+.progressBar {
+    position: absolute;
+    transform: translateX(-1px);
+    bottom: 0;
+    width: 3px;
+    border: 1px solid var(--green);
+    border-radius: 10px;
+    height: 0%;
+    background-color: var(--green);
+    box-shadow: var(--main-shadow);
+}
+
+.progressNum {
+    color: var(--grey-text);
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+}
