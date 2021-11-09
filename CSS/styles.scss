@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Expansiva";
+    src: url(/Fonts/Expansiva/Expansiva.otf);
+}
+
+@font-face {
+    font-family: "Expansiva Bold";
+    src: url(/Fonts/Expansiva/Expansiva-bold.otf);
+}
+
+// ------------------------------ Variables ------------------------------
+
+:root {
+    // Colors
+    --purple: #7161F5;
+    --purple-blue: #626CF5;
+    --purple-blue-lighter: #6286F5;
+    --turquoise: #62F5E6;
+    --green: #61F570;
+    --yellow: #E6F561;
+    --darker: #040117;
+    --dark: #07032E;
+    --light: #F5F4FE;
+    --lighter: #FFFFFF;
+    --background-text: rgba(113, 97, 245, 0.05);
+    --grey-text: #ABABAB;
+
+    // Font tyoe
+    --body-font: 'obvia';
+    --header-font: 'Expansiva';
+    --header-font-bold: 'Expansiva Bold';
+
+    // Font size
+    --body-font-size: 1rem;
+
+    // Shadows
+    --main-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.042),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        100px 100px 80px rgba(0, 0, 0, 0.02);
+    --hover-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.1),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.072),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.06),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.05),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.04),
+        100px 100px 80px rgba(0, 0, 0, 0.028);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+    margin: auto;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--darker), var(--dark));
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    color: var(--light);
+}
+
+// ------------------------------ Fonts ------------------------------
+
+h1 {
+    font-family: var(--header-font-bold);
+    color: var(--light);
+    font-size: 3.052rem;
+}
+
+h2,
+h3 {
+    font-family: var(--header-font);
+    color: var(--grey-text);
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-family: var(--header-font);
+    color: var(--yellow);
+    font-size: 1.563rem;
+}
+
+h5 {
+    font-family: var(--header-font);
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+p {
+    font-family: var(--body-font);
+}
