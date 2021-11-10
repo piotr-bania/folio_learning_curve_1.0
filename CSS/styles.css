@@ -77,31 +77,31 @@ body {
 h1 {
   font-family: var(--header-font-bold);
   font-size: 3.052rem;
-  color: var(--purple);
+  color: var(--light);
 }
 
 h2 {
   font-family: var(--header-font);
   font-size: 2.441rem;
-  color: var(--purple-blue-lighter);
+  color: var(--grey-text);
 }
 
 h3 {
   font-family: var(--header-font);
   font-size: 1.953rem;
-  color: var(--purple-blue-lighter);
+  color: var(--yellow);
 }
 
 h4 {
   font-family: var(--header-font);
   font-size: 1.563rem;
-  color: var(--blue-turqupise);
+  color: var(--light);
 }
 
 h5 {
   font-family: var(--header-font);
   font-size: 1.25rem;
-  color: var(--turquoise);
+  color: var(--green);
 }
 
 p {
@@ -132,10 +132,6 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-}
-
-#section-a h1 {
-  color: var(--light);
 }
 
 #section-b .container {
@@ -194,7 +190,8 @@ section {
   background-image: linear-gradient(to right, var(--lighter), var(--light));
 }
 
-#section-c p,
+#section-c h1, #section-c p,
+#section-e h1,
 #section-e p {
   color: var(--dark);
 }
@@ -280,7 +277,7 @@ section {
   text-align: left;
   font-size: 3rem;
   font-family: var(--header-font-bold);
-  color: var(--red);
+  color: var(--green);
   padding-bottom: 20px;
 }
 
@@ -310,6 +307,7 @@ canvas {
   height: auto;
   right: 5%;
   top: 5%;
+  z-index: -1;
 }
 
 .upper-heading {
@@ -363,14 +361,6 @@ span {
   left: 20%;
 }
 
-.all-projects {
-  margin-top: 50px;
-}
-
-img {
-  width: 100%;
-}
-
 button {
   border-radius: 20px 5px 10px 10px;
   padding: 15px 45px;
@@ -385,8 +375,8 @@ button {
 
 button:hover {
   cursor: pointer;
-  border: 1px solid var(--yellow);
-  color: var(--yellow);
+  border: 1px solid var(--green);
+  color: var(--green);
   background-image: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(var(--dark)));
   background-image: linear-gradient(to right, var(--purple), var(--dark));
   -webkit-box-shadow: var(--hover-shadow);
@@ -489,7 +479,7 @@ button:hover {
   }
   .heading {
     width: 70%;
-    left: 20%;
+    left: 15%;
   }
   #section-b,
   #section-c,
@@ -554,7 +544,7 @@ button:hover {
   }
   .heading {
     width: 80%;
-    left: 20%;
+    left: 10%;
   }
   #section-b,
   #section-c,

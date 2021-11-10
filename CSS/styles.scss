@@ -82,31 +82,31 @@ body {
 h1 {
     font-family: var(--header-font-bold);
     font-size: 3.052rem;
-    color: var(--purple);
+    color: var(--light);
 }
 
 h2 {
     font-family: var(--header-font);
     font-size: 2.441rem;
-    color: var(--purple-blue-lighter);
+    color: var(--grey-text);
 }
 
 h3 {
     font-family: var(--header-font);
     font-size: 1.953rem;
-    color: var(--purple-blue-lighter);
+    color: var(--yellow);
 }
 
 h4 {
     font-family: var(--header-font);
     font-size: 1.563rem;
-    color: var(--blue-turqupise);
+    color: var(--light);
 }
 
 h5 {
     font-family: var(--header-font);
     font-size: 1.25rem;
-    color: var(--turquoise);
+    color: var(--green);
 }
 
 p {
@@ -129,11 +129,6 @@ section {
 
 #section-a {
     min-height: 100vh;
-
-    h1 {
-        color: var(--light);
-    }
-
     background-image: url(/Images/Backgrounds/Piotr-Bania.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -203,7 +198,7 @@ section {
 #section-e {
     background-image: linear-gradient(to right, var(--lighter), var(--light));
 
-    p {
+    h1, p {
         color: var(--dark);
     }
 }
@@ -289,7 +284,7 @@ section {
     text-align: left;
     font-size: 3rem;
     font-family: var(--header-font-bold);
-    color: var(--red);
+    color: var(--green);
     padding-bottom: 20px;
 }
 
@@ -320,6 +315,7 @@ canvas {
     height: auto;
     right: 5%;
     top: 5%;
+    z-index: -1;
 }
 
 .upper-heading {
@@ -374,14 +370,6 @@ span {
     left: 20%;
 }
 
-.all-projects {
-    margin-top: 50px;
-}
-
-img {
-    width: 100%;
-}
-
 // ------------------------------ Buttons ------------------------------
 
 button {
@@ -395,8 +383,8 @@ button {
 
 button:hover {
     cursor: pointer;
-    border: 1px solid var(--yellow);
-    color: var(--yellow);
+    border: 1px solid var(--green);
+    color: var(--green);
     background-image: linear-gradient(to right, var(--purple), var(--dark));
     box-shadow: var(--hover-shadow);
 }
@@ -501,7 +489,7 @@ button:hover {
 
     .heading {
         width: 70%;
-        left: 20%;
+        left: 15%;
     }
 
     #section-b,
@@ -582,7 +570,7 @@ button:hover {
 
     .heading {
         width: 80%;
-        left: 20%;
+        left: 10%;
     }
 
     #section-b,
