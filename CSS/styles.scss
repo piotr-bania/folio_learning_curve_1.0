@@ -382,23 +382,39 @@ canvas {
     display: flex;
     align-content: center;
     justify-content: center;
-    max-width: 800px;
-    margin: 5rem auto;
+    max-width: 900px;
+    margin: 7rem auto;
     opacity: 50%;
     transition: all 0.3s ease-in-out;
-
-    .img img {
-        border: 1px solid var(--dark);
-        transition: all 0.3s ease-in-out;
-    }
 }
 
 #section-b .project:hover {
     opacity: 100%;
+}
 
-    .img img {
-        border: 1px solid var(--green);
-    }
+#section-b .project .left .img {
+    border-radius: 20px 5px 10px 10px;
+    border: 1px solid var(--dark);
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#section-b .project .left .img:hover {
+    border: 1px solid var(--red);
+}
+
+#section-b .project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+#section-b .project:nth-child(even) .right {
+    margin-left: 0;
+}
+
+#section-b .project:nth-child(even) .left {
+    margin-left: -100px;
 }
 
 .project-description {
@@ -411,16 +427,21 @@ canvas {
 
 #section-b .project .right {
     flex: 1;
-    margin-left: -150px;
-    margin-top: 50px;
-    background-color: rgba(7, 3, 46, 0.75);
+    margin-left: -100px;
+    margin-top: 75px;
+    background-color: rgba(7, 3, 46, 0.5);
     border-radius: 20px 5px 10px 10px;
     padding: 15px 45px;
     box-shadow: var(--main-shadow);
+    border: 1px solid transparent;
+    z-index: 5;
+    transition: all 0.3s ease-in-out;
 }
 
 #section-b .project .right:hover {
+    background-color: rgba(7, 3, 46, 0.95);
     box-shadow: var(--hover-shadow);
+    border: 1px solid var(--green);
 
     .view-button {
         text-decoration: underline;

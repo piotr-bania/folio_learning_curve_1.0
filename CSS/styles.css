@@ -378,15 +378,9 @@ canvas {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 800px;
-  margin: 5rem auto;
+  max-width: 900px;
+  margin: 7rem auto;
   opacity: 50%;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-#section-b .project .img img {
-  border: 1px solid var(--dark);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -395,8 +389,34 @@ canvas {
   opacity: 100%;
 }
 
-#section-b .project:hover .img img {
-  border: 1px solid var(--green);
+#section-b .project .left .img {
+  border-radius: 20px 5px 10px 10px;
+  border: 1px solid var(--dark);
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#section-b .project .left .img:hover {
+  border: 1px solid var(--red);
+}
+
+#section-b .project:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#section-b .project:nth-child(even) .right {
+  margin-left: 0;
+}
+
+#section-b .project:nth-child(even) .left {
+  margin-left: -100px;
 }
 
 .project-description {
@@ -413,18 +433,24 @@ canvas {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: -150px;
-  margin-top: 50px;
-  background-color: rgba(7, 3, 46, 0.75);
+  margin-left: -100px;
+  margin-top: 75px;
+  background-color: rgba(7, 3, 46, 0.5);
   border-radius: 20px 5px 10px 10px;
   padding: 15px 45px;
   -webkit-box-shadow: var(--main-shadow);
           box-shadow: var(--main-shadow);
+  border: 1px solid transparent;
+  z-index: 5;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #section-b .project .right:hover {
+  background-color: rgba(7, 3, 46, 0.95);
   -webkit-box-shadow: var(--hover-shadow);
           box-shadow: var(--hover-shadow);
+  border: 1px solid var(--green);
 }
 
 #section-b .project .right:hover .view-button {
