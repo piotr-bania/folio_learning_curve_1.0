@@ -297,6 +297,29 @@ section {
   transition: 0.3s ease-in-out;
 }
 
+.heroText {
+  position: absolute;
+  width: auto;
+  left: 17%;
+  bottom: 10%;
+}
+
+canvas {
+  position: absolute;
+  width: 90%;
+  height: auto;
+  right: 5%;
+  top: 5%;
+}
+
+.upper-heading {
+  padding-bottom: 20px;
+}
+
+.lower-heading {
+  padding-bottom: 40px;
+}
+
 .text {
   color: var(--light);
 }
@@ -345,13 +368,12 @@ span {
 }
 
 img {
-  width: 40%;
+  width: 100%;
 }
 
 button {
   border-radius: 20px 5px 10px 10px;
-  padding: 15px 25px;
-  margin-top: 20px;
+  padding: 15px 45px;
   border: 1px solid var(--darker);
   background-image: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(var(--darker)));
   background-image: linear-gradient(to right, var(--purple), var(--darker));
@@ -444,7 +466,54 @@ button:hover {
   top: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  h1 {
+    font-size: 1.802rem;
+  }
+  h2 {
+    font-size: 1.602rem;
+  }
+  h3 {
+    font-size: 1.424rem;
+  }
+  h4 {
+    font-size: 1.266rem;
+  }
+  h5 {
+    font-size: 1.125rem;
+  }
+  button {
+    border-radius: 15px 4px 8px 8px;
+    padding: 12px 35px;
+    font-size: var(--small-font-size);
+  }
+  .heading {
+    width: 70%;
+    left: 20%;
+  }
+  #section-b,
+  #section-c,
+  #section-d,
+  #section-e,
+  #section-f {
+    padding: 80px 0;
+  }
+  .heroText {
+    left: 14%;
+    bottom: 13%;
+  }
+  .upper-heading {
+    padding-bottom: 15px;
+  }
+  .lower-heading {
+    padding-bottom: 25px;
+  }
+  canvas {
+    top: 15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .logo {
     width: 50px;
     height: 50px;
@@ -479,13 +548,13 @@ button:hover {
     font-size: var(--small-font-size);
   }
   button {
-    border-radius: 17px 3px 7px 7px;
-    padding: 10px 15px;
-    margin-top: 10px;
+    border-radius: 10px 3px 6px 6px;
+    padding: 9px 25px;
     font-size: var(--small-font-size);
   }
   .heading {
-    left: 10%;
+    width: 80%;
+    left: 20%;
   }
   #section-b,
   #section-c,
@@ -494,8 +563,18 @@ button:hover {
   #section-f {
     padding: 50px 0;
   }
-  img {
-    width: 100%;
+  .heroText {
+    left: 11%;
+    bottom: 16%;
+  }
+  .upper-heading {
+    padding-bottom: 10px;
+  }
+  .lower-heading {
+    padding-bottom: 20px;
+  }
+  canvas {
+    top: 25%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
