@@ -198,7 +198,8 @@ section {
 #section-e {
     background-image: linear-gradient(to right, var(--lighter), var(--light));
 
-    h1, p {
+    h1,
+    p {
         color: var(--dark);
     }
 }
@@ -261,7 +262,7 @@ section {
     }
 
     a:hover {
-        color: var(--yellow);
+        color: var(--green);
     }
 }
 
@@ -284,7 +285,7 @@ section {
     text-align: left;
     font-size: 3rem;
     font-family: var(--header-font-bold);
-    color: var(--green);
+    color: var(--purple-blue-lighter);
     padding-bottom: 20px;
 }
 
@@ -301,6 +302,40 @@ section {
 }
 
 // ------------------------------ Hero section ------------------------------
+
+strong {
+    color: var(--purple-blue);
+}
+
+b {
+    font-family: var(--header-font-bold);
+    color: var(--green);
+}
+
+button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--light);
+}
+
+a {
+    color: var(--light);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--green);
+}
+
+span {
+    color: var(--purple);
+}
+
+.heading {
+    position: relative;
+    width: 60%;
+    left: 20%;
+}
 
 .heroText {
     position: absolute;
@@ -336,38 +371,79 @@ canvas {
 
 // ------------------------------ Portfolio section ------------------------------
 
-strong {
-    color: var(--purple-blue);
+.icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 10px;
 }
 
-b {
-    font-family: var(--header-font-bold);
-    color: var(--green);
+#section-b .project {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 5rem auto;
+    opacity: 50%;
+    transition: all 0.3s ease-in-out;
+
+    .img img {
+        border: 1px solid var(--dark);
+        transition: all 0.3s ease-in-out;
+    }
 }
 
-button {
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    color: var(--light);
+#section-b .project:hover {
+    opacity: 100%;
+
+    .img img {
+        border: 1px solid var(--green);
+    }
 }
 
-a {
-    color: var(--light);
+.project-description {
+    color: var(--red);
+}
+
+#section-b .project .left {
+    flex: 1;
+}
+
+#section-b .project .right {
+    flex: 1;
+    margin-left: -150px;
+    margin-top: 50px;
+    background-color: rgba(7, 3, 46, 0.75);
+    border-radius: 20px 5px 10px 10px;
+    padding: 15px 45px;
+    box-shadow: var(--main-shadow);
+}
+
+#section-b .project .right:hover {
+    box-shadow: var(--hover-shadow);
+
+    .view-button {
+        text-decoration: underline;
+    }
+}
+
+#section-b .project img {
+    border-radius: 20px 5px 10px 10px;
+    box-shadow: var(--main-shadow);
     transition: all 0.3s ease-in-out;
 }
 
-a:hover {
-    color: var(--green);
+#section-b .project img {
+    box-shadow: var(--hover-shadow);
 }
 
-span {
-    color: var(--purple);
+hr {
+    border: 1px solid var(--green);
+    margin: 15px 0;
 }
 
-.heading {
-    position: relative;
-    width: 60%;
-    left: 20%;
+.number {
+    color: var(--grey-text);
 }
 
 // ------------------------------ Buttons ------------------------------
