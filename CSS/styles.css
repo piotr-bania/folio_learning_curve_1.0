@@ -174,7 +174,7 @@ section {
 #section-d,
 #section-e,
 #section-f {
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 #section-b,
@@ -328,6 +328,7 @@ span {
   position: relative;
   width: 60%;
   left: 20%;
+  margin: 100px 0;
 }
 
 .heroText {
@@ -364,119 +365,9 @@ canvas {
 
 .icon {
   position: relative;
-  width: 30px;
-  height: 30px;
-  top: 10px;
-}
-
-#section-b .project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 900px;
-  margin: 7rem auto;
-  opacity: 50%;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-#section-b .project:hover {
-  opacity: 100%;
-}
-
-#section-b .project .left .img {
-  border-radius: 20px 5px 10px 10px;
-  border: 1px solid var(--dark);
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-#section-b .project .left .img:hover {
-  border: 1px solid var(--red);
-}
-
-#section-b .project:nth-child(even) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-#section-b .project:nth-child(even) .right {
-  margin-left: 0;
-}
-
-#section-b .project:nth-child(even) .left {
-  margin-left: -100px;
-}
-
-.project-description {
-  color: var(--red);
-}
-
-#section-b .project .left {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-#section-b .project .right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-left: -100px;
-  margin-top: 75px;
-  background-color: rgba(7, 3, 46, 0.5);
-  border-radius: 20px 5px 10px 10px;
-  padding: 15px 45px;
-  -webkit-box-shadow: var(--main-shadow);
-          box-shadow: var(--main-shadow);
-  border: 1px solid transparent;
-  z-index: 5;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-#section-b .project .right:hover {
-  background-color: rgba(7, 3, 46, 0.95);
-  -webkit-box-shadow: var(--hover-shadow);
-          box-shadow: var(--hover-shadow);
-  border: 1px solid var(--green);
-}
-
-#section-b .project .right:hover .view-button {
-  text-decoration: underline;
-}
-
-#section-b .project img {
-  border-radius: 20px 5px 10px 10px;
-  -webkit-box-shadow: var(--main-shadow);
-          box-shadow: var(--main-shadow);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-#section-b .project img {
-  -webkit-box-shadow: var(--hover-shadow);
-          box-shadow: var(--hover-shadow);
-}
-
-hr {
-  border: 1px solid var(--green);
-  margin: 15px 0;
-}
-
-.number {
-  color: var(--grey-text);
+  width: 25px;
+  height: 25px;
+  top: 7px;
 }
 
 button {
