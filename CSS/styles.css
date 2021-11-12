@@ -10,10 +10,9 @@
 
 :root {
   --purple: #7161F5;
-  --purple-blue: #626CF5;
-  --purple-blue-lighter: #6286F5;
-  --blue-turqupise: #629FF5;
-  --turquoise: #62B8F5;
+  --purple-blue: #6286F5;
+  --blue-turqupise: #62B8F5;
+  --turquoise: #62EAF5;
   --green: #61F570;
   --yellow: #E6F561;
   --red: #F57061;
@@ -42,6 +41,9 @@
         22.3px 22.3px 17.9px rgba(0, 0, 0, 0.05),
         41.8px 41.8px 33.4px rgba(0, 0, 0, 0.04),
         100px 100px 80px rgba(0, 0, 0, 0.028);
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
 }
 
 *,
@@ -78,35 +80,40 @@ body {
 h1 {
   font-family: var(--header-font-bold);
   font-size: 3.052rem;
-  color: var(--light);
+  color: var(--purple);
 }
 
 h2 {
   font-family: var(--header-font);
   font-size: 2.441rem;
-  color: var(--grey-text);
+  color: var(--purple-blue);
 }
 
 h3 {
   font-family: var(--header-font);
   font-size: 1.953rem;
-  color: var(--yellow);
+  color: var(--blue-turqupise);
 }
 
 h4 {
   font-family: var(--header-font);
   font-size: 1.563rem;
-  color: var(--light);
+  color: var(--turquoise);
 }
 
 h5 {
   font-family: var(--header-font);
   font-size: 1.25rem;
-  color: var(--green);
+  color: var(--red);
 }
 
 p {
   font-family: var(--body-font);
+}
+
+.view-button {
+  color: var(--yellow);
+  text-decoration: underline;
 }
 
 section {
@@ -133,6 +140,10 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
+}
+
+#section-a h1 {
+  color: var(--light);
 }
 
 #section-b .container {
@@ -280,7 +291,6 @@ section {
   text-align: left;
   font-size: 3rem;
   font-family: var(--header-font-bold);
-  color: var(--purple-blue-lighter);
   padding-bottom: 20px;
 }
 
@@ -298,7 +308,7 @@ section {
 }
 
 strong {
-  color: var(--purple-blue);
+  color: var(--red);
 }
 
 b {
@@ -391,7 +401,7 @@ img {
 }
 
 .project-item:hover .project-image img {
-  border: 1px solid var(--blue-turqupise);
+  border: 1px solid var(--purple);
 }
 
 button {
