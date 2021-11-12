@@ -34,7 +34,7 @@
 
     // Font size
     --normal-font-size: 1rem;
-    --small-font-size: 0.85rem;
+    --small-font-size: 0.9rem;
 
     // Shadows
     --main-shadow:
@@ -73,6 +73,7 @@ body {
     background-image: linear-gradient(to right, var(--darker), var(--dark));
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
+    line-height: 1.5;
     color: var(--light);
     user-select: none;
 }
@@ -313,12 +314,6 @@ b {
     color: var(--green);
 }
 
-button {
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    color: var(--light);
-}
-
 a {
     color: var(--light);
     transition: all 0.3s ease-in-out;
@@ -399,19 +394,28 @@ img {
 
 .project-item:hover {
     opacity: 100%;
+
     .project-image img {
         border: 1px solid var(--blue-turqupise);
     }
 }
 
-
 // ------------------------------ Buttons ------------------------------
 
 button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--light);
+    height: 3em;
     border-radius: 20px 5px 10px 10px;
-    padding: 15px 45px;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    padding: calc(0.5em - 1px) 1em;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     border: 1px solid var(--darker);
-    background-image: linear-gradient(to right, var(--purple), var(--darker));
+    background: linear-gradient(90deg, rgba(113, 97, 245, 0.65) 0%, rgba(4, 1, 23, 0.65) 100%);
     box-shadow: var(--main-shadow);
     transition: all 0.3s ease-in-out;
 }
@@ -517,9 +521,11 @@ button:hover {
     }
 
     button {
-        border-radius: 15px 4px 8px 8px;
-        padding: 12px 35px;
         font-size: var(--small-font-size);
+        height: 2.8em;
+        line-height: 1.4;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .heading {
@@ -598,9 +604,11 @@ button:hover {
     }
 
     button {
-        border-radius: 10px 3px 6px 6px;
-        padding: 9px 25px;
         font-size: var(--small-font-size);
+        height: 2.8em;
+        line-height: 1.4;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .heading {

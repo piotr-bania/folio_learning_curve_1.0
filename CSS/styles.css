@@ -27,7 +27,7 @@
   --header-font: 'Expansiva';
   --header-font-bold: 'Expansiva Bold';
   --normal-font-size: 1rem;
-  --small-font-size: 0.85rem;
+  --small-font-size: 0.9rem;
   --main-shadow:
         2.8px 2.8px 2.2px rgba(0, 0, 0, 0.07),
         6.7px 6.7px 5.3px rgba(0, 0, 0, 0.05),
@@ -67,6 +67,7 @@ body {
   background-image: linear-gradient(to right, var(--darker), var(--dark));
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+  line-height: 1.5;
   color: var(--light);
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -305,12 +306,6 @@ b {
   color: var(--green);
 }
 
-button {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  color: var(--light);
-}
-
 a {
   color: var(--light);
   -webkit-transition: all 0.3s ease-in-out;
@@ -400,11 +395,22 @@ img {
 }
 
 button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--light);
+  height: 3em;
   border-radius: 20px 5px 10px 10px;
-  padding: 15px 45px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  padding: calc(0.5em - 1px) 1em;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   border: 1px solid var(--darker);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(var(--darker)));
-  background-image: linear-gradient(to right, var(--purple), var(--darker));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(113, 97, 245, 0.65)), to(rgba(4, 1, 23, 0.65)));
+  background: linear-gradient(90deg, rgba(113, 97, 245, 0.65) 0%, rgba(4, 1, 23, 0.65) 100%);
   -webkit-box-shadow: var(--main-shadow);
           box-shadow: var(--main-shadow);
   -webkit-transition: all 0.3s ease-in-out;
@@ -511,9 +517,11 @@ button:hover {
     font-size: 1.125rem;
   }
   button {
-    border-radius: 15px 4px 8px 8px;
-    padding: 12px 35px;
     font-size: var(--small-font-size);
+    height: 2.8em;
+    line-height: 1.4;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .heading {
     width: 70%;
@@ -576,9 +584,11 @@ button:hover {
     font-size: var(--small-font-size);
   }
   button {
-    border-radius: 10px 3px 6px 6px;
-    padding: 9px 25px;
     font-size: var(--small-font-size);
+    height: 2.8em;
+    line-height: 1.4;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .heading {
     width: 80%;
