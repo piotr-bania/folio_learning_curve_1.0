@@ -86,41 +86,37 @@ body {
 
 h1 {
     font-family: var(--header-font-bold);
-    font-size: 3.052rem;
+    font-size: clamp(1.383rem, 7vmin, 3.052rem);
     color: var(--purple);
 }
 
 h2 {
     font-family: var(--header-font);
-    font-size: 2.441rem;
+    font-size: clamp(1.296rem, 5.6vmin, 2.441rem);
     color: var(--purple-blue);
 }
 
 h3 {
     font-family: var(--header-font);
-    font-size: 1.953rem;
+    font-size: clamp(1.215rem, 4.5vmin, 1.953rem);
     color: var(--blue-turqupise);
 }
 
 h4 {
     font-family: var(--header-font);
-    font-size: 1.563rem;
+    font-size: clamp(1.138rem, 3.6vmin, 1.563rem);
     color: var(--turquoise);
 }
 
 h5 {
     font-family: var(--header-font);
-    font-size: 1.25rem;
-    color: var(--red);
+    font-size: clamp(1.067rem, 2.85vmin, 1.25rem);
+    color: var(--grey-text);
 }
 
 p {
     font-family: var(--body-font);
-}
-
-.view-button {
-    color: var(--yellow);
-    text-decoration: underline;
+    font-size: clamp(0.9rem, 2.85vmin, 1.25rem);
 }
 
 // ------------------------------ Sections ------------------------------
@@ -318,7 +314,7 @@ section {
 // ------------------------------ Hero section ------------------------------
 
 strong {
-    color: var(--red);
+    color: var(--green);
 }
 
 b {
@@ -375,7 +371,7 @@ canvas {
 }
 
 .cursor {
-    color: var(--red);
+    color: var(--green);
 }
 
 // ------------------------------ Portfolio section ------------------------------
@@ -408,7 +404,7 @@ img {
     opacity: 100%;
 
     .project-image img {
-        border: 1px solid var(--purple);
+        border: 1px solid var(--green);
     }
 }
 
@@ -512,26 +508,6 @@ button:hover {
 // ------------------------------ Media queries ------------------------------
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
-    h1 {
-        font-size: 1.802rem;
-    }
-
-    h2 {
-        font-size: 1.602rem;
-    }
-
-    h3 {
-        font-size: 1.424rem;
-    }
-
-    h4 {
-        font-size: 1.266rem;
-    }
-
-    h5 {
-        font-size: 1.125rem;
-    }
-
     button {
         font-size: var(--small-font-size);
         height: 2.8em;
@@ -589,30 +565,6 @@ button:hover {
 
     #nav-content a {
         font-size: 1.5rem;
-    }
-
-    h1 {
-        font-size: 1.383rem;
-    }
-
-    h2 {
-        font-size: 1.296rem;
-    }
-
-    h3 {
-        font-size: 1.215rem;
-    }
-
-    h4 {
-        font-size: 1.138rem;
-    }
-
-    h5 {
-        font-size: 1.067rem;
-    }
-
-    p {
-        font-size: var(--small-font-size);
     }
 
     button {
