@@ -186,6 +186,10 @@ section {
   padding-bottom: 100px;
 }
 
+#section-a {
+  background: radial-gradient(circle at 30% 60%, #0B0445 0%, #040117 100%);
+}
+
 #section-b,
 #section-d,
 #section-f {
@@ -245,8 +249,7 @@ section {
   height: 100%;
   max-width: 600px;
   z-index: 99;
-  background: -webkit-gradient(linear, left top, right top, from(var(--darker)), to(var(--dark)));
-  background: linear-gradient(to right, var(--darker), var(--dark));
+  background: conic-gradient(from 0deg at 75% 85%, #07032E 0%, #040117 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,9 +417,9 @@ button {
   padding: calc(0.5em - 1px) 1em;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  border: 1px solid var(--darker);
-  background: -webkit-gradient(linear, left top, right top, from(rgba(113, 97, 245, 0.65)), to(rgba(4, 1, 23, 0.65)));
-  background: linear-gradient(90deg, rgba(113, 97, 245, 0.65) 0%, rgba(4, 1, 23, 0.65) 100%);
+  border: 1px solid var(--dark);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(113, 97, 245, 0.75)), to(rgba(113, 97, 245, 0)));
+  background: linear-gradient(90deg, rgba(113, 97, 245, 0.75) 0%, rgba(113, 97, 245, 0) 100%);
   -webkit-box-shadow: var(--main-shadow);
           box-shadow: var(--main-shadow);
   -webkit-transition: all 0.3s ease-in-out;
@@ -427,8 +430,8 @@ button:hover {
   cursor: pointer;
   border: 1px solid var(--green);
   color: var(--green);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(var(--dark)));
-  background-image: linear-gradient(to right, var(--purple), var(--dark));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(113, 97, 245, 0.85)), to(rgba(113, 97, 245, 0.25)));
+  background: linear-gradient(90deg, rgba(113, 97, 245, 0.85) 0%, rgba(113, 97, 245, 0.25) 100%);
   -webkit-box-shadow: var(--hover-shadow);
           box-shadow: var(--hover-shadow);
 }
@@ -487,7 +490,8 @@ button:hover {
   position: fixed;
   width: 1px;
   height: 100vh;
-  background: rgba(113, 97, 245, 0.1);
+  background: -webkit-gradient(linear, left bottom, left top, from(#7161F500), to(#7161F54D));
+  background: linear-gradient(0deg, #7161F500 0%, #7161F54D 100%);
   z-index: 90;
 }
 
