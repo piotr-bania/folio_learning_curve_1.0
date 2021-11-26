@@ -200,7 +200,7 @@ section {
 }
 
 #section-a {
-    background:radial-gradient(circle at 30% 60%, #0B0445 0%, #040117 100%);
+    background: radial-gradient(circle at 30% 60%, #0B0445 0%, #040117 100%);
 }
 
 #section-b,
@@ -260,7 +260,7 @@ section {
     height: 100%;
     max-width: 600px;
     z-index: 99;
-    background: conic-gradient(from 0deg at 75% 85%, #07032E 0%, #040117 100%);
+    background: linear-gradient(90deg, var(--dark) 0%, var(--darker) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
