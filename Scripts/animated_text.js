@@ -1,6 +1,6 @@
 const words = [
     "develop apps",
-    "make games",
+    "shape Metaverse",
     "design in 3D",
     "build websites",
     "create things"

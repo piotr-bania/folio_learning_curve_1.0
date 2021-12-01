@@ -350,7 +350,7 @@ canvas {
   height: auto;
   right: 5%;
   top: 5%;
-  z-index: -1;
+  z-index: 0;
 }
 
 .upper-heading {
