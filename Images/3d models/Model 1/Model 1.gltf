@@ -1,0 +1,600 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "blenderkitUI" : {
+                    "asset_type" : 2,
+                    "dragging" : 0,
+                    "assetbar_on" : 0,
+                    "turn_off" : 0,
+                    "margin" : 0,
+                    "thumb_size" : 96,
+                    "bar_x" : 78,
+                    "bar_end" : 320,
+                    "bar_width" : 1188,
+                    "wcount" : 12,
+                    "hcount" : 1,
+                    "bar_height" : 96,
+                    "bar_y" : 791,
+                    "reports_y" : 595,
+                    "reports_x" : 78,
+                    "rating_x" : 78,
+                    "rating_y" : 695,
+                    "scrolloffset" : 0,
+                    "mouse_x" : 1550,
+                    "mouse_y" : 448,
+                    "has_hit" : 0,
+                    "active_index" : -3,
+                    "draw_drag_image" : 0,
+                    "draw_snapped_bounds" : 0,
+                    "draw_tooltip" : 0,
+                    "drawoffset" : 0,
+                    "tooltip" : "",
+                    "drag_init" : 0,
+                    "drag_length" : 6,
+                    "snapped_location" : [
+                        0,
+                        0,
+                        0
+                    ],
+                    "snapped_normal" : [
+                        0,
+                        0,
+                        1
+                    ],
+                    "snapped_rotation" : [
+                        0,
+                        0,
+                        2.384185791015625e-07
+                    ],
+                    "snapped_bbox_min" : [
+                        -0.10559999942779541,
+                        -0.10719999670982361,
+                        9.999999747378752e-05
+                    ],
+                    "snapped_bbox_max" : [
+                        0.10559999942779541,
+                        0.10559999942779541,
+                        0.19419999420642853
+                    ]
+                },
+                "blenderkit_models" : {
+                    "is_searching" : 0,
+                    "report" : "Found 8722 results. ",
+                    "search_error" : 0,
+                    "append_link" : 1,
+                    "import_as" : 1
+                },
+                "blenderkit_mat" : {
+                    "search_keywords" : "+is_free:true+score_gte:1000+order:-created",
+                    "is_searching" : 0,
+                    "report" : "",
+                    "search_error" : 0
+                },
+                "assets used" : {
+                    "1230f5e6-76a3-43f4-a975-542aacbe9f58" : {
+                        "thumbnail" : "thumbnail_7d476dfd-48fc-4d5c-b5bf-e6e1f8a1feac.jpg.512x512_q85_crop-%2C.jpg",
+                        "thumbnail_small" : "thumbnail_7d476dfd-48fc-4d5c-b5bf-e6e1f8a1feac.jpg.256x256_q85_crop-%2C.jpg",
+                        "tooltip" : "Green Christmas Gift\n Box Red Ribbon\n",
+                        "downloaded" : 0,
+                        "bbox_min" : [
+                            -0.1056,
+                            -0.1072,
+                            0.0001
+                        ],
+                        "bbox_max" : [
+                            0.1056,
+                            0.1056,
+                            0.1942
+                        ],
+                        "url" : "https://www.blenderkit.com/api/v1/assets/5dca2b76-d405-4a7e-956e-1861fd8087e6/",
+                        "id" : "5dca2b76-d405-4a7e-956e-1861fd8087e6",
+                        "assetBaseId" : "1230f5e6-76a3-43f4-a975-542aacbe9f58",
+                        "versionNumber" : 1,
+                        "author" : {
+                            "id" : "174174",
+                            "firstName" : "Joanna",
+                            "lastName" : "",
+                            "gravatarHash" : "d9c0b2b3aebbb96988e50fe7f7c80d10",
+                            "avatar128" : "/avatar-redirect/e0fd7adf-609f-467e-8040-4b01cba9085e/128/",
+                            "aboutMe" : "Did the Fruit Orange appear first? or the Colour Orange?"
+                        },
+                        "name" : "Green Christmas Gift Box Red Ribbon",
+                        "displayName" : "Green Christmas Gift Box Red Ribbon",
+                        "description" : "Green Gift Box With Red Ribbon For Festive Christmas Decoration",
+                        "assetType" : "model",
+                        "category" : "supplies",
+                        "adult" : 0,
+                        "isFree" : 0,
+                        "tags" : [
+                            "Christmas",
+                            "decoration",
+                            "deco",
+                            "box",
+                            "gift",
+                            "gift box",
+                            "ribbon",
+                            "red ribbon",
+                            "green stripes",
+                            "holiday",
+                            "santa",
+                            "present",
+                            "birthday"
+                        ],
+                        "license" : "royalty_free",
+                        "parameters" : [
+                            {
+                                "parameterType" : "textureResolutionMax",
+                                "value" : 4096
+                            },
+                            {
+                                "parameterType" : "faceCount",
+                                "value" : 705
+                            },
+                            {
+                                "parameterType" : "productionLevel",
+                                "value" : "finished"
+                            },
+                            {
+                                "parameterType" : "procedural",
+                                "value" : 0
+                            },
+                            {
+                                "parameterType" : "model_style",
+                                "value" : "realistic"
+                            },
+                            {
+                                "parameterType" : "purePbr",
+                                "value" : 1
+                            },
+                            {
+                                "parameterType" : "shaders",
+                                "value" : [
+                                    "principled"
+                                ]
+                            },
+                            {
+                                "parameterType" : "animated",
+                                "value" : 0
+                            },
+                            {
+                                "parameterType" : "pbrType",
+                                "value" : "metallic"
+                            },
+                            {
+                                "parameterType" : "uv",
+                                "value" : 1
+                            },
+                            {
+                                "parameterType" : "textureResolutionMin",
+                                "value" : 2048
+                            },
+                            {
+                                "parameterType" : "engines",
+                                "value" : [
+                                    "cycles"
+                                ]
+                            },
+                            {
+                                "parameterType" : "modifiers",
+                                "value" : [
+                                    "subsurf"
+                                ]
+                            },
+                            {
+                                "parameterType" : "materials",
+                                "value" : [
+                                    "Red Ribbon Fabric",
+                                    "Green Stripes Box"
+                                ]
+                            },
+                            {
+                                "parameterType" : "rig",
+                                "value" : 0
+                            },
+                            {
+                                "parameterType" : "simulation",
+                                "value" : 0
+                            },
+                            {
+                                "parameterType" : "dimensionX",
+                                "value" : 0.2111
+                            },
+                            {
+                                "parameterType" : "dimensionY",
+                                "value" : 0.2128
+                            },
+                            {
+                                "parameterType" : "dimensionZ",
+                                "value" : 0.1941
+                            },
+                            {
+                                "parameterType" : "boundBoxMinX",
+                                "value" : -0.1056
+                            },
+                            {
+                                "parameterType" : "boundBoxMinY",
+                                "value" : -0.1072
+                            },
+                            {
+                                "parameterType" : "boundBoxMinZ",
+                                "value" : 0.0001
+                            },
+                            {
+                                "parameterType" : "boundBoxMaxX",
+                                "value" : 0.1056
+                            },
+                            {
+                                "parameterType" : "boundBoxMaxY",
+                                "value" : 0.1056
+                            },
+                            {
+                                "parameterType" : "boundBoxMaxZ",
+                                "value" : 0.1942
+                            },
+                            {
+                                "parameterType" : "faceCountRender",
+                                "value" : 5460
+                            },
+                            {
+                                "parameterType" : "meshPolyType",
+                                "value" : "quad_dominant"
+                            },
+                            {
+                                "parameterType" : "manifold",
+                                "value" : 0
+                            },
+                            {
+                                "parameterType" : "objectCount",
+                                "value" : 4
+                            },
+                            {
+                                "parameterType" : "nodeCount",
+                                "value" : 35
+                            },
+                            {
+                                "parameterType" : "textureCount",
+                                "value" : 7
+                            },
+                            {
+                                "parameterType" : "megapixels",
+                                "value" : 42
+                            }
+                        ],
+                        "sourceAppName" : "blender",
+                        "sourceAppVersion" : "2.93.4",
+                        "addonVersion" : "2.93.0",
+                        "created" : "2021-11-24T16:00:59.221218+01:00",
+                        "verificationStatus" : "validated",
+                        "isPrivate" : 0,
+                        "files" : [
+                            {
+                                "fileType" : "blend",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/87701/",
+                                "url" : "https://d255qm5a95hvrp.cloudfront.net/assets/5dca2b76d4054a7e956e1861fd8087e6/files/blend_683205fe-3e77-405d-92e4-f8abf446de91.blend?Expires=1637936365&Signature=EcOK~MSkNOARMTaLb5NPwmFvMvYPoLxc3yfafT-RqUYrDq9Te-~4wkPM4~1rkEwaE11StCUbSYv7jP5yhsk5h047MfER9~0utZbAy9FkLNI1NuPikB6b5ngOx7LL7TOmVn9bl90PD7WKN9i27SRU5UnskbelLzQXd4Ec~NilMAPPZhKooDylS~W5VdgZ-GANCReeQKSbF~H8GCOna~circVUmOk2yBrZigmt-KY7KZPW4YYv-uBa5jRXGj0-Fkoa35XYRA628KUA4RAC4HymyF1PnkaILfVFX5TIjzF0tJGl7xts8VDjC~aq2I0S00-uvlphZ-xYx222wb8ksnIeEQ__&Key-Pair-Id=KHZSXFBGJQRJ3",
+                                "file_name" : "blend_683205fe-3e77-405d-92e4-f8abf446de91.blend"
+                            },
+                            {
+                                "fileType" : "thumbnail",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/87700/",
+                                "fileThumbnail" : "https://public.blenderkit.com/thumbnails/assets/5dca2b76d4054a7e956e1861fd8087e6/files/thumbnail_7d476dfd-48fc-4d5c-b5bf-e6e1f8a1feac.jpg.96x96_q85_crop-%2C.jpg",
+                                "fileThumbnailLarge" : "https://public.blenderkit.com/thumbnails/assets/5dca2b76d4054a7e956e1861fd8087e6/files/thumbnail_7d476dfd-48fc-4d5c-b5bf-e6e1f8a1feac.jpg.1024x1024_q85_crop-%2C.jpg"
+                            }
+                        ],
+                        "filesSize" : 52595625,
+                        "thumbnailSmallUrl" : "https://public.blenderkit.com/thumbnails/assets/5dca2b76d4054a7e956e1861fd8087e6/files/thumbnail_7d476dfd-48fc-4d5c-b5bf-e6e1f8a1feac.jpg.256x256_q85_crop-%2C.jpg",
+                        "thumbnailMiddleUrl" : "https://public.blenderkit.com/thumbnails/assets/5dca2b76d4054a7e956e1861fd8087e6/files/thumbnail_7d476dfd-48fc-4d5c-b5bf-e6e1f8a1feac.jpg.512x512_q85_crop-%2C.jpg",
+                        "thumbnailLargeUrl" : "https://public.blenderkit.com/thumbnails/assets/5dca2b76d4054a7e956e1861fd8087e6/files/thumbnail_7d476dfd-48fc-4d5c-b5bf-e6e1f8a1feac.jpg.1024x1024_q85_crop-%2C.jpg",
+                        "thumbnailXlargeUrl" : "https://public.blenderkit.com/thumbnails/assets/5dca2b76d4054a7e956e1861fd8087e6/files/thumbnail_7d476dfd-48fc-4d5c-b5bf-e6e1f8a1feac.jpg.1024x1024_q85_crop-%2C.jpg",
+                        "thumbnailSmallUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/5dca2b76d4054a7e956e1861fd8087e6/files/thumbnail_7d476dfd-48fc-4d5c-b5bf-e6e1f8a1feac.jpg.256x256_q85.jpg",
+                        "thumbnailMiddleUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/5dca2b76d4054a7e956e1861fd8087e6/files/thumbnail_7d476dfd-48fc-4d5c-b5bf-e6e1f8a1feac.jpg.512x512_q85.jpg",
+                        "thumbnailLargeUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/5dca2b76d4054a7e956e1861fd8087e6/files/thumbnail_7d476dfd-48fc-4d5c-b5bf-e6e1f8a1feac.jpg.1024x1024_q85.jpg",
+                        "thumbnailXlargeUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/5dca2b76d4054a7e956e1861fd8087e6/files/thumbnail_7d476dfd-48fc-4d5c-b5bf-e6e1f8a1feac.jpg.2048x2048_q85.jpg",
+                        "showMarketingLabels" : 1,
+                        "score" : 240,
+                        "ratingsMedian" : {
+                            "quality" : 6,
+                            "workingHours" : 4
+                        },
+                        "ratingsAverage" : {
+                            "quality" : 6,
+                            "workingHours" : 4
+                        },
+                        "ratingsCount" : {
+                            "quality" : 1,
+                            "virtualPrice" : 0,
+                            "complexity" : 0,
+                            "workingHours" : 1,
+                            "virtualPriceAdmin" : 0,
+                            "complexityAdmin" : 0
+                        },
+                        "canDownload" : 1,
+                        "canDownloadError" : 1,
+                        "max_resolution" : 0,
+                        "resolution" : "resolution_1K"
+                    }
+                },
+                "uuid" : "ccb8e3c6-439d-45a2-9d22-13ff8aa5fffe",
+                "assets rated" : {
+                    "1230f5e6-76a3-43f4-a975-542aacbe9f58" : 0
+                },
+                "uiListCollec" : [
+                    {
+                        "idx" : 0,
+                        "val" : 0.048301130533218384,
+                        "color" : [
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    },
+                    {
+                        "idx" : 1,
+                        "val" : 0.12170154601335526,
+                        "color" : [
+                            1,
+                            1,
+                            1,
+                            1
+                        ]
+                    }
+                ],
+                "glTF2ExportSettings" : {
+                    "export_animations" : 1,
+                    "export_apply" : 1,
+                    "export_cameras" : 1,
+                    "export_extras" : 1,
+                    "export_format" : "GLTF_SEPARATE",
+                    "export_lights" : 1,
+                    "export_morph" : 1,
+                    "export_skins" : 1,
+                    "export_tangents" : 1,
+                    "use_active_collection" : 1,
+                    "use_mesh_edges" : 0,
+                    "use_mesh_vertices" : 0,
+                    "use_renderable" : 1,
+                    "use_selection" : 1,
+                    "use_visible" : 1
+                }
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Dark matter",
+            "scale" : [
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Light",
+            "scale" : [
+                0.25,
+                0.25,
+                0.25
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Dark matter",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.001214000047184527,
+                    0.0003035272820852697,
+                    0.00856812670826912,
+                    1
+                ],
+                "metallicFactor" : 0.75,
+                "roughnessFactor" : 0.25
+            }
+        },
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                1,
+                1,
+                1
+            ],
+            "name" : "Light",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Icosphere",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TANGENT" : 2,
+                        "TEXCOORD_0" : 3
+                    },
+                    "indices" : 4,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Sphere",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 5,
+                        "NORMAL" : 6,
+                        "TANGENT" : 7,
+                        "TEXCOORD_0" : 8
+                    },
+                    "indices" : 9,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 82626,
+            "max" : [
+                0.656336784362793,
+                0.678627073764801,
+                0.637601375579834
+            ],
+            "min" : [
+                -0.6801947951316833,
+                -0.6670250296592712,
+                -0.606455385684967
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 82626,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 82626,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 82626,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5125,
+            "count" : 737280,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 2512,
+            "max" : [
+                0.9872310161590576,
+                0.9975767135620117,
+                0.9872307181358337
+            ],
+            "min" : [
+                -0.9872304201126099,
+                -0.9975767135620117,
+                -0.9872304201126099
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 2512,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 2512,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 2512,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5123,
+            "count" : 11904,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 991512,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 991512,
+            "byteOffset" : 991512
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1322016,
+            "byteOffset" : 1983024
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 661008,
+            "byteOffset" : 3305040
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2949120,
+            "byteOffset" : 3966048
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 30144,
+            "byteOffset" : 6915168
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 30144,
+            "byteOffset" : 6945312
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 40192,
+            "byteOffset" : 6975456
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 20096,
+            "byteOffset" : 7015648
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 23808,
+            "byteOffset" : 7035744
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 7059552,
+            "uri" : "Model 1.bin"
+        }
+    ]
+}
