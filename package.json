@@ -1,5 +1,24 @@
 {
   "dependencies": {
+    "gsap": "^3.9.1",
     "three": "^0.135.0"
-  }
+  },
+  "name": "portfolio",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotr-bania/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piotr-bania/Portfolio/issues"
+  },
+  "homepage": "https://github.com/piotr-bania/Portfolio#readme"
 }
