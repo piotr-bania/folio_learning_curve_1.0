@@ -10,7 +10,5 @@ import {
 
 gsap.registerPlugin(TextPlugin, ExpoScaleEase, RoughEase, SlowMo);
 
-console.log(THREE)
-
-// Canvas
+// ----------------- Canvas -----------------
 const canvas = document.querySelector('canvas.canvas')
