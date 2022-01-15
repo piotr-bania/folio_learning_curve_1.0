@@ -22,9 +22,13 @@ const scene = new THREE.Scene()
 // ----------------- Camera -----------------
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-camera.position.x = 1
-camera.position.y = 1
+camera.position.x = -1.5
+camera.position.y = 1.5
 camera.position.z = 5
+
+// ----------------- Lights -----------------
+
+
 
 // ----------------- Render -----------------
 
@@ -39,10 +43,10 @@ document.body.appendChild(renderer.domElement)
 
 // ----------------- Mesh -----------------
 
-const geometry = new THREE.BoxGeometry()
+const geometry = new THREE.BoxGeometry(2, 2, 2)
 
 const material = new THREE.MeshBasicMaterial({
-    color: 0x00ff00
+    color: 0x7161F5
 })
 const cube = new THREE.Mesh(geometry, material)
 scene.add(cube)
