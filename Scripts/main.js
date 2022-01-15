@@ -7,8 +7,95 @@ import {
     RoughEase,
     SlowMo
 } from '../node_modules/gsap/src/EasePack.js'
-
 gsap.registerPlugin(TextPlugin, ExpoScaleEase, RoughEase, SlowMo);
 
 // ----------------- Canvas -----------------
-const canvas = document.querySelector('canvas.canvas')
+const canvas = document.querySelector('.canvas-1')
+
+const scene = new THREE.Scene()
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+
+const renderer = new THREE.WebGLRenderer({
+    canvas: canvas,
+    antialias: true,
+    alpha: true
+})
+
+renderer.setSize(window.innerWidth, window.innerHeight)
+document.body.appendChild(renderer.domElement)
+
+const geometry = new THREE.BoxGeometry()
+
+const material = new THREE.MeshBasicMaterial({
+    color: 0x00ff00
+})
+const cube = new THREE.Mesh(geometry, material)
+scene.add(cube)
+
+camera.position.z = 5
+
+function animate() {
+    requestAnimationFrame(animate)
+    renderer.render(scene, camera)
+}
+animate();
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // ----------------- Render -----------------
+// const renderer = new THREE.WebGLRenderer({
+//     antialias: true,
+//     alpha: true
+// });
+// renderer.setSize(window.innerWidth, window.innerHeight);
+// document.body.appendChild(renderer.domElement);
+
+// // ----------------- Scene -----------------
+// const scene = new THREE.Scene();
+// const camera = new THREE.PerspectiveCamera(
+//     50,
+//     window.innerWidth / window.innerHeight,
+//     0.1,
+//     100
+// );
+// camera.position.z = 6;
+// camera.position.y = 0;
+
+// // ----------------- Mesh -----------------
+// const geometry = new THREE.BoxGeometry(2, 2, 2);
+// const material = new THREE.MeshBasicMaterial({
+//     color: 0x7161F5,
+// });
+// const cube = new THREE.Mesh(geometry, material);
+// scene.add(cube);
+
+// // ----------------- Helpers -----------------
+// const gridHelper = new THREE.GridHelper(10, 10);
+// scene.add(gridHelper);
+// const axesHelper = new THREE.AxesHelper(5);
+// scene.add(axesHelper);
+
+// // ----------------- Loop -----------------
+// const animate = function () {
+//     requestAnimationFrame(animate);
+//     renderer.render(scene, camera);
+// };
+// animate();
+
+// // ----------------- Resize -----------------
+// function onWindowResize() {
+//     camera.aspect = (window.innerWidth / window.innerWidth);
+//     camera.updateProjectionMatrix();
+//     renderer.setSize(window.innerWidth, window.innerWidth);
+// }
+// window.addEventListener('resize', onWindowResize, false);

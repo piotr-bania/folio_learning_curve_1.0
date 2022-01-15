@@ -131,6 +131,7 @@ section {
     width: 90%;
     margin: 0 auto;
     max-width: 1468px;
+    z-index: 80;
 }
 
 #section-a {
@@ -353,13 +354,23 @@ span {
     bottom: 10%;
 }
 
+// .canvas-1 {
+//     position: absolute;
+//     width: 90%;
+//     height: auto;
+//     right: 5%;
+//     top: 5%;
+//     z-index: 0;
+//     border: 1px solid #ffffff;
+// }
+
 canvas {
     position: absolute;
     width: 90%;
     height: auto;
     right: 5%;
     top: 5%;
-    z-index: 0;
+    border: 1px solid #ffffff;
 }
 
 .upper-heading {
@@ -491,7 +502,7 @@ button:hover {
     width: 1px;
     height: 100vh;
     background: linear-gradient(0deg, #7161F500 0%, #7161F54D 100%);
-    z-index: 90;
+    z-index: 0;
 }
 
 .one {
@@ -546,9 +557,9 @@ button:hover {
         padding-bottom: 25px;
     }
 
-    canvas {
-        top: 15%;
-    }
+    // canvas {
+    //     top: 15%;
+    // }
 }
 
 @media screen and (max-width: 768px) {
@@ -605,9 +616,9 @@ button:hover {
         padding-bottom: 20px;
     }
 
-    canvas {
-        top: 25%;
-    }
+    // canvas {
+    //     top: 25%;
+    // }
 
     .project-item {
         opacity: 100%;

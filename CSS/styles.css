@@ -128,6 +128,7 @@ section {
   width: 90%;
   margin: 0 auto;
   max-width: 1468px;
+  z-index: 80;
 }
 
 #section-a {
@@ -350,7 +351,7 @@ canvas {
   height: auto;
   right: 5%;
   top: 5%;
-  z-index: 0;
+  border: 1px solid #ffffff;
 }
 
 .upper-heading {
@@ -493,7 +494,7 @@ button:hover {
   height: 100vh;
   background: -webkit-gradient(linear, left bottom, left top, from(#7161F500), to(#7161F54D));
   background: linear-gradient(0deg, #7161F500 0%, #7161F54D 100%);
-  z-index: 90;
+  z-index: 0;
 }
 
 .one {
@@ -540,9 +541,6 @@ button:hover {
   .lower-heading {
     padding-bottom: 25px;
   }
-  canvas {
-    top: 15%;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -588,9 +586,6 @@ button:hover {
   }
   .lower-heading {
     padding-bottom: 20px;
-  }
-  canvas {
-    top: 25%;
   }
   .project-item {
     opacity: 100%;
