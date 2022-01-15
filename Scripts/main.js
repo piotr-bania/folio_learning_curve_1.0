@@ -7,22 +7,37 @@ import {
     RoughEase,
     SlowMo
 } from '../node_modules/gsap/src/EasePack.js'
+
 gsap.registerPlugin(TextPlugin, ExpoScaleEase, RoughEase, SlowMo);
 
-// ----------------- Canvas -----------------
-const canvas = document.querySelector('.canvas-1')
+// ----------------- Canvas 1-----------------
+
+const canvas_1 = document.querySelector('.canvas-1')
+canvas_1.style.position = 'absolute';
+
+// ----------------- Scene -----------------
 
 const scene = new THREE.Scene()
+
+// ----------------- Camera -----------------
+
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+camera.position.x = 1
+camera.position.y = 1
+camera.position.z = 5
+
+// ----------------- Render -----------------
 
 const renderer = new THREE.WebGLRenderer({
-    canvas: canvas,
+    canvas: canvas_1,
     antialias: true,
     alpha: true
 })
 
 renderer.setSize(window.innerWidth, window.innerHeight)
 document.body.appendChild(renderer.domElement)
+
+// ----------------- Mesh -----------------
 
 const geometry = new THREE.BoxGeometry()
 
@@ -32,7 +47,14 @@ const material = new THREE.MeshBasicMaterial({
 const cube = new THREE.Mesh(geometry, material)
 scene.add(cube)
 
-camera.position.z = 5
+// ----------------- Helpers -----------------
+
+const gridHelper = new THREE.GridHelper(10, 10);
+scene.add(gridHelper);
+const axesHelper = new THREE.AxesHelper(5);
+scene.add(axesHelper);
+
+// ----------------- Loop -----------------
 
 function animate() {
     requestAnimationFrame(animate)
@@ -40,6 +62,14 @@ function animate() {
 }
 animate();
 
+// ----------------- Resize -----------------
+
+function onWindowResize() {
+    camera.aspect = (window.innerWidth / window.innerWidth);
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerWidth);
+}
+window.addEventListener('resize', onWindowResize, false);
 
 
 

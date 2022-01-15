@@ -345,13 +345,8 @@ span {
   bottom: 10%;
 }
 
-canvas {
-  position: absolute;
-  width: 90%;
-  height: auto;
-  right: 5%;
-  top: 5%;
-  border: 1px solid #ffffff;
+.canvas-1 {
+  top: 0;
 }
 
 .upper-heading {

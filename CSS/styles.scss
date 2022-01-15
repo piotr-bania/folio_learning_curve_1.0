@@ -354,23 +354,8 @@ span {
     bottom: 10%;
 }
 
-// .canvas-1 {
-//     position: absolute;
-//     width: 90%;
-//     height: auto;
-//     right: 5%;
-//     top: 5%;
-//     z-index: 0;
-//     border: 1px solid #ffffff;
-// }
-
-canvas {
-    position: absolute;
-    width: 90%;
-    height: auto;
-    right: 5%;
-    top: 5%;
-    border: 1px solid #ffffff;
+.canvas-1 {
+    top: 0;
 }
 
 .upper-heading {
@@ -556,10 +541,6 @@ button:hover {
     .lower-heading {
         padding-bottom: 25px;
     }
-
-    // canvas {
-    //     top: 15%;
-    // }
 }
 
 @media screen and (max-width: 768px) {
@@ -615,10 +596,6 @@ button:hover {
     .lower-heading {
         padding-bottom: 20px;
     }
-
-    // canvas {
-    //     top: 25%;
-    // }
 
     .project-item {
         opacity: 100%;
